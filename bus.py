@@ -9,6 +9,22 @@ class Bus:
         self.__number = number # private
         # конструктор кот прикрутит соотв поля нашим автобусам
 
+    def get_price(self):
+        return self.__price
+
+    def set_price(self, price):
+        if price > 0:
+            self.__price = price
+
+    def get_brand(self):
+        return self.__brand
+
+    def set_number(self, number):
+        self.__number = number
+
+    def get_number(self):
+        return self.__number
+
     # def __del__(self):
     #     print(f"destructor for {self.brand}")
 
@@ -18,5 +34,7 @@ class Bus:
 
 if __name__ == "__main__":
     bus = Bus()
+    bus.set_price(12000)
+    print(bus.get_price)
     bus.number = -10 #public
 
