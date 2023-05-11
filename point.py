@@ -14,3 +14,7 @@ class Point2D:
 
     def set_y(self):
         self.__y = y
+
+    def __str__(self):
+        return f"Point2D: x = {self.__x}, y = {self.__y}"
+
