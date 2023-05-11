@@ -5,8 +5,12 @@ class Counter:
         else:
             self.__count = 0
 
-    def get_count(self):
+    @propery # декоратор
+    def count(self):
         return self.__count
+
+    # использование свойства вместо метода
+   # свойство реализуется как метод а обращение к нему происходит как к полю
 
     def increment(self):
         self.__count += 1
